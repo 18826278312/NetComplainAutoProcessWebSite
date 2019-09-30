@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.BsParaInfoManageMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BsParaInfoManage">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="bs_cgi" jdbcType="VARCHAR" property="bsCgi" />
+    <result column="bs_name" jdbcType="VARCHAR" property="bsName" />
+    <result column="bs_city" jdbcType="VARCHAR" property="bsCity" />
+    <result column="bs_area" jdbcType="VARCHAR" property="bsArea" />
+    <result column="bs_cover_type" jdbcType="VARCHAR" property="bsCoverType" />
+    <result column="bs_scene" jdbcType="VARCHAR" property="bsScene" />
+    <result column="bs_gps_lat" jdbcType="DOUBLE" property="bsGpsLat" />
+    <result column="bs_gps_lng" jdbcType="DOUBLE" property="bsGpsLng" />
+    <result column="bs_tac" jdbcType="VARCHAR" property="bsTac" />
+    <result column="bs_eci" jdbcType="VARCHAR" property="bsEci" />
+    <result column="bs_status" jdbcType="VARCHAR" property="bsStatus" />
+    <result column="bs_freq" jdbcType="VARCHAR" property="bsFreq" />
+    <result column="bs_pci" jdbcType="INTEGER" property="bsPci" />
+    <result column="bs_channel" jdbcType="INTEGER" property="bsChannel" />
+    <result column="bs_room" jdbcType="VARCHAR" property="bsRoom" />
+    <result column="bs_antenna" jdbcType="VARCHAR" property="bsAntenna" />
+    <result column="bs_athigh" jdbcType="DOUBLE" property="bsAthigh" />
+    <result column="bs_height" jdbcType="DOUBLE" property="bsHeight" />
+    <result column="bs_azimuth" jdbcType="DOUBLE" property="bsAzimuth" />
+    <result column="bs_elec_down" jdbcType="DOUBLE" property="bsElecDown" />
+    <result column="bs_mach_down" jdbcType="DOUBLE" property="bsMachDown" />
+    <result column="bs_type" jdbcType="VARCHAR" property="bsType" />
+    <result column="bs_radius" jdbcType="INTEGER" property="bsRadius" />
+    <result column="bs_ct_gps" jdbcType="VARCHAR" property="bsCtGps" />
+    <result column="bs_ct_baidu" jdbcType="VARCHAR" property="bsCtBaidu" />
+    <result column="bs_ct_gaode" jdbcType="VARCHAR" property="bsCtGaode" />
+    <result column="bs_direc_gps" jdbcType="VARCHAR" property="bsDirecGps" />
+    <result column="bs_direc_baidu" jdbcType="VARCHAR" property="bsDirecBaidu" />
+    <result column="bs_direc_gaode" jdbcType="VARCHAR" property="bsDirecGaode" />
+    <result column="bs_sec_gps" jdbcType="VARCHAR" property="bsSecGps" />
+    <result column="bs_sec_baidu" jdbcType="VARCHAR" property="bsSecBaidu" />
+    <result column="bs_sec_gaode" jdbcType="VARCHAR" property="bsSecGaode" />
+    <result column="bs_sec_area" jdbcType="DOUBLE" property="bsSecArea" />
+    <result column="recdate" jdbcType="TIMESTAMP" property="recdate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    bs_cgi, bs_name, bs_city, bs_area, bs_cover_type, bs_scene, bs_gps_lat, bs_gps_lng, 
+    bs_tac, bs_eci, bs_status, bs_freq, bs_pci, bs_channel, bs_room, bs_antenna, bs_athigh, 
+    bs_height, bs_azimuth, bs_elec_down, bs_mach_down, bs_type, bs_radius, bs_ct_gps, 
+    bs_ct_baidu, bs_ct_gaode, bs_direc_gps, bs_direc_baidu, bs_direc_gaode, bs_sec_gps, 
+    bs_sec_baidu, bs_sec_gaode, bs_sec_area, recdate
+  </sql>
+  
+  <select id="selectByBsType" resultMap="BaseResultMap" parameterType="String">
+  	select * from bs_para_info_manage where bs_type = #{bsType};
+  </select>
+</mapper>

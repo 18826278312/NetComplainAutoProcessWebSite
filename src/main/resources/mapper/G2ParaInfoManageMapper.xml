@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.G2ParaInfoManageMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.G2ParaInfoManage">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="g2_cgi" jdbcType="VARCHAR" property="g2Cgi" />
+    <result column="arm" jdbcType="VARCHAR" property="arm" />
+    <result column="bcc" jdbcType="INTEGER" property="bcc" />
+    <result column="bcch" jdbcType="INTEGER" property="bcch" />
+    <result column="ci" jdbcType="VARCHAR" property="ci" />
+    <result column="gprs_st_chl" jdbcType="INTEGER" property="gprsStChl" />
+    <result column="gprs_on" jdbcType="VARCHAR" property="gprsOn" />
+    <result column="lac" jdbcType="VARCHAR" property="lac" />
+    <result column="mccch" jdbcType="VARCHAR" property="mccch" />
+    <result column="ncc" jdbcType="INTEGER" property="ncc" />
+    <result column="edge" jdbcType="INTEGER" property="edge" />
+    <result column="tch" jdbcType="VARCHAR" property="tch" />
+    <result column="sdcch" jdbcType="INTEGER" property="sdcch" />
+    <result column="pdch" jdbcType="INTEGER" property="pdch" />
+    <result column="call_on" jdbcType="VARCHAR" property="callOn" />
+    <result column="dev_provide" jdbcType="VARCHAR" property="devProvide" />
+    <result column="bsc" jdbcType="VARCHAR" property="bsc" />
+    <result column="msc" jdbcType="VARCHAR" property="msc" />
+    <result column="channel" jdbcType="VARCHAR" property="channel" />
+    <result column="g2_ch_name" jdbcType="VARCHAR" property="g2ChName" />
+    <result column="g2_eg_name" jdbcType="VARCHAR" property="g2EgName" />
+    <result column="chnum" jdbcType="INTEGER" property="chnum" />
+    <result column="ccch" jdbcType="INTEGER" property="ccch" />
+    <result column="gprs_dy_chl" jdbcType="INTEGER" property="gprsDyChl" />
+    <result column="g2_city" jdbcType="VARCHAR" property="g2City" />
+    <result column="g2_azimuth" jdbcType="DOUBLE" property="g2Azimuth" />
+    <result column="g2_cover_type" jdbcType="VARCHAR" property="g2CoverType" />
+    <result column="g2_gps_lat" jdbcType="DOUBLE" property="g2GpsLat" />
+    <result column="g2_gps_lng" jdbcType="DOUBLE" property="g2GpsLng" />
+    <result column="g2_area" jdbcType="VARCHAR" property="g2Area" />
+    <result column="g2_athigh" jdbcType="DOUBLE" property="g2Athigh" />
+    <result column="g2_down" jdbcType="DOUBLE" property="g2Down" />
+    <result column="road_test" jdbcType="VARCHAR" property="roadTest" />
+    <result column="g2_radius" jdbcType="INTEGER" property="g2Radius" />
+    <result column="g2_ct_gps" jdbcType="VARCHAR" property="g2CtGps" />
+    <result column="g2_ct_baidu" jdbcType="VARCHAR" property="g2CtBaidu" />
+    <result column="g2_ct_gaode" jdbcType="VARCHAR" property="g2CtGaode" />
+    <result column="g2_direc_gps" jdbcType="VARCHAR" property="g2DirecGps" />
+    <result column="g2_direc_baidu" jdbcType="VARCHAR" property="g2DirecBaidu" />
+    <result column="g2_direc_gaode" jdbcType="VARCHAR" property="g2DirecGaode" />
+    <result column="g2_sec_gps" jdbcType="VARCHAR" property="g2SecGps" />
+    <result column="g2_sec_baidu" jdbcType="VARCHAR" property="g2SecBaidu" />
+    <result column="g2_sec_gaode" jdbcType="VARCHAR" property="g2SecGaode" />
+    <result column="g2_sec_area" jdbcType="DOUBLE" property="g2SecArea" />
+    <result column="recdate" jdbcType="TIMESTAMP" property="recdate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    g2_cgi, arm, bcc, bcch, ci, gprs_st_chl, gprs_on, lac, mccch, ncc, edge, tch, sdcch, 
+    pdch, call_on, dev_provide, bsc, msc, channel, g2_ch_name, g2_eg_name, chnum, ccch, 
+    gprs_dy_chl, g2_city, g2_azimuth, g2_cover_type, g2_gps_lat, g2_gps_lng, g2_area, 
+    g2_athigh, g2_down, road_test, g2_radius, g2_ct_gps, g2_ct_baidu, g2_ct_gaode, g2_direc_gps, 
+    g2_direc_baidu, g2_direc_gaode, g2_sec_gps, g2_sec_baidu, g2_sec_gaode, g2_sec_area, 
+    recdate
+  </sql>
+</mapper>

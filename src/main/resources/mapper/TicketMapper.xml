@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.TicketMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.Ticket">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="ticket_sid" jdbcType="VARCHAR" property="ticketSid" />
+    <result column="statu" jdbcType="TINYINT" property="statu" />
+    <result column="telephone" jdbcType="VARCHAR" property="telephone" />
+    <result column="lat" jdbcType="VARCHAR" property="lat" />
+    <result column="lng" jdbcType="VARCHAR" property="lng" />
+    <result column="address_short" jdbcType="VARCHAR" property="addressShort" />
+    <result column="address_long" jdbcType="VARCHAR" property="addressLong" />
+    <result column="place_type" jdbcType="INTEGER" property="placeType" />
+    <result column="problem_id" jdbcType="INTEGER" property="problemId" />
+    <result column="star_service" jdbcType="TINYINT" property="starService" />
+    <result column="star_staff" jdbcType="TINYINT" property="starStaff" />
+    <result column="submit_time" jdbcType="TIMESTAMP" property="submitTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="authphone" jdbcType="VARCHAR" property="authphone" />
+    <result column="token" jdbcType="VARCHAR" property="token" />
+    <result column="address_detail" jdbcType="VARCHAR" property="addressDetail" />
+    <result column="accept" jdbcType="VARCHAR" property="accept" />
+    <result column="alert" jdbcType="BIT" property="alert" />
+    <result column="alert_time" jdbcType="TIMESTAMP" property="alertTime" />
+    <result column="assign" jdbcType="BIT" property="assign" />
+    <result column="star_solved" jdbcType="TINYINT" property="starSolved" />
+    <result column="address_detail2" jdbcType="VARCHAR" property="addressDetail2" />
+    <result column="allow_inspection" jdbcType="TINYINT" property="allowInspection" />
+    <result column="inspection_data" jdbcType="TIMESTAMP" property="inspectionData" />
+    <result column="inspection_time" jdbcType="TINYINT" property="inspectionTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, ticket_sid, statu, telephone, lat, lng, address_short, address_long, place_type, 
+    problem_id, star_service, star_staff, submit_time, end_time, authphone, token, address_detail, 
+    accept, alert, alert_time, assign, star_solved, address_detail2, allow_inspection, 
+    inspection_data, inspection_time
+  </sql>
+</mapper>

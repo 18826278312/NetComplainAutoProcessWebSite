@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.BlackSpotInfoManageMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BlackSpotInfoManage">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="cmp_id" jdbcType="VARCHAR" property="cmpId" />
+    <result column="cmp_gps_lng" jdbcType="DOUBLE" property="cmpGpsLng" />
+    <result column="cmp_gps_lat" jdbcType="DOUBLE" property="cmpGpsLat" />
+    <result column="bs_cgi" jdbcType="VARCHAR" property="bsCgi" />
+    <result column="spot_source" jdbcType="VARCHAR" property="spotSource" />
+    <result column="bs_cover_type" jdbcType="VARCHAR" property="bsCoverType" />
+    <result column="spot_type" jdbcType="VARCHAR" property="spotType" />
+    <result column="spot_name" jdbcType="VARCHAR" property="spotName" />
+    <result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
+    <result column="net_type" jdbcType="VARCHAR" property="netType" />
+    <result column="cmp_type" jdbcType="VARCHAR" property="cmpType" />
+    <result column="spot_status" jdbcType="VARCHAR" property="spotStatus" />
+    <result column="esti_time" jdbcType="TIMESTAMP" property="estiTime" />
+    <result column="spot_level" jdbcType="VARCHAR" property="spotLevel" />
+    <result column="cmp_num1" jdbcType="INTEGER" property="cmpNum1" />
+    <result column="cmp_num2" jdbcType="INTEGER" property="cmpNum2" />
+    <result column="cmp_scene" jdbcType="VARCHAR" property="cmpScene" />
+    <result column="spot_area" jdbcType="VARCHAR" property="spotArea" />
+    <result column="can_solve" jdbcType="VARCHAR" property="canSolve" />
+    <result column="solve_time" jdbcType="TIMESTAMP" property="solveTime" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="spot_reason" jdbcType="VARCHAR" property="spotReason" />
+    <result column="solve_way" jdbcType="VARCHAR" property="solveWay" />
+    <result column="is_plan" jdbcType="VARCHAR" property="isPlan" />
+    <result column="plan_id" jdbcType="VARCHAR" property="planId" />
+    <result column="progress" jdbcType="VARCHAR" property="progress" />
+    <result column="spot_gps" jdbcType="VARCHAR" property="spotGps" />
+    <result column="spot_baidu" jdbcType="VARCHAR" property="spotBaidu" />
+    <result column="spot_gaode" jdbcType="VARCHAR" property="spotGaode" />
+    <result column="recdate" jdbcType="TIMESTAMP" property="recdate" />
+  </resultMap>
+</mapper>
